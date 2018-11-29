@@ -1,0 +1,175 @@
+/* Colors
+Dark orange: #CF6F0C
+Light orange: #FFDFA9
+White: #FFFFFF
+Mint Blue: #CBF3F0
+Dark Mint Blue: #2EC4B6
+*/
+
+/*----------------------------------
+  Global Styles
+-----------------------------------*/
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: #FFFFFF;
+  font-family: 'VT323', monospace;
+  margin: 0;
+  font-size: 1.125rem;
+}
+a {
+  color: #CF6F0C;
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+h1 {
+  font-size: 3.75rem;
+}
+h2 {
+  font-size: 1.875rem;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+  font-size: 1.875rem;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: none;
+  color: #CF6F0C;
+  background: #FFFFFF;
+  padding: 10px;
+  display: inline-block;
+}
+
+/*----------------------------------
+  Header and Footer
+-----------------------------------*/
+header, footer {
+  background: #2EC4B6;
+  color: #FFFFFF;
+}
+
+/* Header
+-----------------------------------*/
+header {
+  padding-top: 50px;
+  position: relative;
+}
+.profile-img {
+  width: 300px;
+  border-radius: 20%;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+header {
+  text-align: left;
+}
+header h1, header h2 {
+  color: #FFDFA9;
+}
+.download {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Footer
+-----------------------------------*/
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Navigation
+-----------------------------------*/
+nav {
+  text-align: center;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*----------------------------------
+  Main
+-----------------------------------*/
+
+/* Work Experience
+-----------------------------------*/
+.work {
+  background: linear-gradient(rgba(203, 243, 240, 0.9), rgba(203, 243, 240, 0.8)),
+              url(../gameboy.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.job-summary {
+  padding-top: 12px;
+  margin-bottom: 25px;
+}
+.job-summary p:first-of-type {
+  margin-top: 0;
+}
+h3 ~ p {
+  margin: 0;
+}
+
+/* Education
+-----------------------------------*/
+.education {
+  background: #FFDFA9;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+
+/*----------------------------------
+  Media Queries
+-----------------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 60%;
+    float: left;
+  }
+}
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+    float: none;
+  }
+}
